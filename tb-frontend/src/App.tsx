@@ -9,18 +9,22 @@ But the split is just preference. Some projects dump everything in index.css. Ot
 
 import './css/App.css'
 import {Routes, Route} from 'react-router-dom'
+import Header from './components/Header'
 import About from './pages/About'
 import Story from './pages/Story'
 
 function App() {
 
   return (
-    <main className='main-content'>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/data" element={<Story />} />
-      </Routes>
-    </main>
+    <>
+      <Header />
+      <main className='main-content'>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/data" element={<Story />} />
+        </Routes>
+      </main>
+    </>
   )
 }
 

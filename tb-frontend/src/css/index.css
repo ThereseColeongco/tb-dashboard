@@ -1,6 +1,9 @@
 body {
-  margin: 5%;
+  margin: 0;
+  background-color: #fdfbf4;
+  color: #241D0B;
 }
+
 h1 {
   font-size: 10vh;
   font-family: 'Segoe UI', Roboto, sans-serif;
@@ -14,7 +17,7 @@ p {
 }
 
 blockquote {
-  padding: 30px;
+  padding-bottom: 30px;
   font-size: 5vh;
   text-align: center;
   font-style: italic;
@@ -25,3 +28,30 @@ blockquote {
 cite {
   font-size: 3vh;
 }
+
+.about-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background-color: #E88670;
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 3.5vh;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease, filter 0.2s ease;
+  font-variant: small-caps;
+}
+
+.about-button:hover {
+  color: #104d3d;
+  filter: brightness(0.95);
+}
+
