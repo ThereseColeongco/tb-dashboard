@@ -18,5 +18,9 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      'semi': 'off', // turn off the base ESLint rule to prevent conflicts
+      '@typescript-eslint/semi': ['error', 'always'] // force TypeScript-aware semicolons
+    },
   },
 ])

@@ -2,11 +2,11 @@
 // providers are components that make data available to the entire component tree below them, without passing props (properties) manually through every level
 // BrowserRouter makes routing available to all components below it
 
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import './css/index.css'  // contains global styles applied everywhere
-import App from './App.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import './css/index.css'; // contains global styles applied everywhere
+import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,4 +14,4 @@ createRoot(document.getElementById('root')!).render(
       <App />
     </BrowserRouter>
   </StrictMode>,
-)
+);

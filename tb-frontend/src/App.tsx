@@ -7,25 +7,24 @@
 But the split is just preference. Some projects dump everything in index.css. Others make a CSS file per component. As long as it stays organized, it doesn't matter.
 */
 
-import './css/App.css'
-import {Routes, Route} from 'react-router-dom'
-import Header from './components/Header'
-import About from './pages/About'
-import Story from './pages/Story'
+import './css/App.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import About from './pages/About';
+import Story from './pages/Story';
 
 function App() {
-
   return (
     <>
       <Header />
-      <main className='main-content'>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/data" element={<Story />} />
         </Routes>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
