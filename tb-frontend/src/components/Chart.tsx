@@ -1,5 +1,6 @@
 import Plot from 'react-plotly.js';
 import type * as Plotly from 'plotly.js';
+import type { CSSProperties } from 'react';
 
 // component state = a built-in object used to store data that can change over time
   // State is completely private to the component that defines it. A parent component cannot directly look into or change a child component's state
@@ -20,6 +21,14 @@ interface ChartProps {
 
 }
 
+const plotStyle: CSSProperties = {
+  position: 'relative',
+  display: 'block',
+  width: '60rem',
+  maxWidth: '100%',
+  margin: '0 auto 4rem',
+};
+
 const defaultLayout: Partial<Plotly.Layout> = {
   autosize: true,  // make plot automatically resize to width of container so it works on phones/tablets w/o fixed pixel sizes
   margin: { t: 80, r: 20, b: 40, l: 40 },  // padding around plot area so axis labels and titles aren't clipped and modebar is on its own line above the plot title
@@ -39,6 +48,7 @@ export default function Chart(props: ChartProps) {
   return (
     <Plot
       data={typedData}
+      style={plotStyle}
       layout={{
         ...defaultLayout,
         ...layout,
