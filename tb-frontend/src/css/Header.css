@@ -20,6 +20,6 @@ header:has(.header:hover) {
 }
 
 .header:hover {
-    color: #1d8067;
+    /* color: #1d8067; */  /* INSTEAD: animate underline in this shade of green on hover (underline appears to spread out from center of header text) */
     transition: color 0.2s ease;
 }
