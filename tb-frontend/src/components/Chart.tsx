@@ -32,7 +32,7 @@ const plotStyle: CSSProperties = {
 const defaultLayout: Partial<Plotly.Layout> = {
   autosize: true,  // make plot automatically resize to width of container so it works on phones/tablets w/o fixed pixel sizes
   margin: { t: 80, r: 20, b: 40, l: 40 },  // padding around plot area so axis labels and titles aren't clipped and modebar is on its own line above the plot title
-title: { yref: 'container', y: 0.90 },  // move the title lower within the top margin, below the modebar row
+  title: { yref: 'container', y: 0.90 },  // move the title lower within the top margin, below the modebar row
   hoverlabel: { namelength: -1 },  // never truncate trace names in the hover tooltip
   paper_bgcolor: 'rgba(0, 0, 0, 0)',  // make chart area background transparent
   plot_bgcolor: 'rgba(0, 0, 0, 0)',  // make plot region background transparent
